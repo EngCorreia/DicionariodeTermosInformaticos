@@ -17,6 +17,7 @@ public class Activity_Splash_Screen extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(Activity_Splash_Screen.this, Activity_Dictionary_Words.class);
                 startActivity(intent);
+                finish();
             }
         },3500);
     }

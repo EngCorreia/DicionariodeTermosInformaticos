@@ -1,5 +1,7 @@
 package com.autonacao.dicionariodetermosinformticos;
 
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 
 import com.autonacao.dicionariodetermosinformticos.adapters.Adapter_Dictionary_Words;
 import com.autonacao.dicionariodetermosinformticos.models.Model_Dictionary_Words;
@@ -20,6 +23,10 @@ public class Activity_Dictionary_Words extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+
+    ProgressDialog progressDialog;
+
+
 
     Toolbar toolbar;
 
@@ -42,6 +49,7 @@ public class Activity_Dictionary_Words extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        progressDialog = new ProgressDialog(this);
 
         recycler_view = findViewById(R.id.recycler_view);
 
