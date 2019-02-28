@@ -22,12 +22,12 @@
 
         <activity
             android:name=".Activity_Dictionary_Words"
-            android:label="@string/title_activity__receive__data__dictionary__words"
+            android:label="@string/activity_dictionary_words"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".receive_data.Activity_Receive_Data_Dictionary_Words"
-            android:label="@string/title_activity__receive__data__dictionary__words"
+            android:label="@string/title_activity_receive_data_dictionary_words"
             android:theme="@style/AppTheme.NoActionBar" />
 
     </application>

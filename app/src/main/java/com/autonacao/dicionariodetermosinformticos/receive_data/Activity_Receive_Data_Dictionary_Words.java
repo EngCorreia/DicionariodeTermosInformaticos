@@ -13,6 +13,8 @@ import com.autonacao.dicionariodetermosinformticos.R;
 
 public class Activity_Receive_Data_Dictionary_Words extends AppCompatActivity {
 
+    private Toolbar toolbar;
+
     private TextView receive_title, receive_description;
 
     @Override
@@ -37,6 +39,7 @@ public class Activity_Receive_Data_Dictionary_Words extends AppCompatActivity {
         String receive_data_title = intent.getStringExtra("title");
         String receive_data_description = intent.getStringExtra("description");
 
+        toolbar.setSubtitle(receive_data_title);
         receive_title.setText(receive_data_title);
         receive_description.setText(receive_data_description);
     }

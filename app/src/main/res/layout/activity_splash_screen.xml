@@ -5,7 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Splash_Screen">
+    tools:context=".Activity_Splash_Screen"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Dicionário de Termos Informáticos"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:fontFamily="serif"
+        android:background="@color/colorPrimary"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

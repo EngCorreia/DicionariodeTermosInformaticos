@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Dicionário de Termos Informáticos</string>
-    <string name="activity_dictionary_words">Dicionário</string>
+    <string name="activity_dictionary_words">Termos Informáticos</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity__receive__data__dictionary__words">Dicionário</string>
-
+    <string name="title_activity_receive_data_dictionary_words">Significado de:</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
