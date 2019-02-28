@@ -10,6 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Activity_Quizz"
+            android:label="@string/title_activity__quizz"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity_Conversion"
+            android:label="@string/title_activity__conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Save_Words"
+            android:label="@string/title_activity__save__words"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Configuration"
+            android:label="@string/title_activity__configuration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Activity_Splash_Screen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -19,17 +35,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Activity_Dictionary_Words"
             android:label="@string/activity_dictionary_words"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".receive_data.Activity_Receive_Data_Dictionary_Words"
             android:label="@string/title_activity_receive_data_dictionary_words"
             android:theme="@style/AppTheme.NoActionBar" />
-
     </application>
 
 </manifest>

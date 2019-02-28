@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group
-        >
-
-        <item
-            android:id="@+id/nav_account"
-            android:title="Calculadora de Binómios" />
+    <group>
 
         <item
             android:id="@+id/nav_settings"
-            android:title="Configurações" />
+            android:title="Configurações"
+            android:icon="@drawable/ic_menu_settings"/>
+
+        <item
+            android:id="@+id/nav_account"
+            android:title="Conversões"
+            android:icon="@drawable/ic_menu_calc"/>
+
+        <item
+            android:id="@+id/nav_save"
+            android:title="Guardados"
+            android:icon="@drawable/ic_menu_save_word"/>
+
+        <item
+            android:id="@+id/nav_quiz"
+            android:title="Quiz"
+            android:icon="@drawable/ic_menu_quiz"/>
 
         <item
             android:id="@+id/nav_logout"
-            android:title="Sobre" />
+            android:title="Sobre"
+            android:icon="@drawable/ic_menu_info"/>
 
     </group>
 

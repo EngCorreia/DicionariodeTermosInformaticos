@@ -6,6 +6,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -39,8 +41,26 @@ public class Activity_Receive_Data_Dictionary_Words extends AppCompatActivity {
         String receive_data_title = intent.getStringExtra("title");
         String receive_data_description = intent.getStringExtra("description");
 
-        toolbar.setSubtitle(receive_data_title);
         receive_title.setText(receive_data_title);
         receive_description.setText(receive_data_description);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_share_data, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.menu_share){
+
+        }
+        if (id == R.id.menu_save){
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
